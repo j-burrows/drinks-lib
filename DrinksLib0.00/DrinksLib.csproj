@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{521409A8-EA8B-47BB-8576-0006E42335A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DrinksLib</RootNamespace>
+    <AssemblyName>DrinksLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Repository">
+      <HintPath>..\..\Repository5\Repository\bin\Release\Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\Avatar.cs" />
+    <Compile Include="Base\Defined_Instruction.cs" />
+    <Compile Include="Base\Drink.cs" />
+    <Compile Include="Base\Ingredient.cs" />
+    <Compile Include="Base\Instruction.cs" />
+    <Compile Include="Base\Rating.cs" />
+    <Compile Include="Base\Unit.cs" />
+    <Compile Include="Business\BAvatar.cs" />
+    <Compile Include="Business\BDefined_Instruction.cs" />
+    <Compile Include="Business\BDrink.cs" />
+    <Compile Include="Business\BIngredient.cs" />
+    <Compile Include="Business\BInstruction.cs" />
+    <Compile Include="Business\BRating.cs" />
+    <Compile Include="Business\BUnit.cs" />
+    <Compile Include="Data\Entities\DAvatar.cs" />
+    <Compile Include="Data\Entities\DDefined_Instruction.cs" />
+    <Compile Include="Data\Entities\DDrink.cs" />
+    <Compile Include="Data\Entities\DIngredient.cs" />
+    <Compile Include="Data\Entities\DInstruction.cs" />
+    <Compile Include="Data\Entities\DRating.cs" />
+    <Compile Include="Data\Entities\DUnit.cs" />
+    <Compile Include="Data\Repositories\SqlSAvatarRepository.cs" />
+    <Compile Include="Data\Repositories\SqlSDefined_InstructionRepository.cs" />
+    <Compile Include="Data\Repositories\SqlSDrinkRepository.cs" />
+    <Compile Include="Data\Repositories\SqlSIngredientRepository.cs" />
+    <Compile Include="Data\Repositories\SqlSInstructionRepository.cs" />
+    <Compile Include="Data\Repositories\SqlSRatingRepository.cs" />
+    <Compile Include="Data\Repositories\SqlSUnitRepository.cs" />
+    <Compile Include="DrinksService.cs" />
+    <Compile Include="Factory\DataUnitFactory.cs" />
+    <Compile Include="Factory\RepositoryFactory.cs" />
+    <Compile Include="Factory\SqlSRepositoryFactory.cs" />
+    <Compile Include="IDrinksService.cs" />
+    <Compile Include="Presentation\PAvatar.cs" />
+    <Compile Include="Presentation\PDefined_Instruction.cs" />
+    <Compile Include="Presentation\PDrink.cs" />
+    <Compile Include="Presentation\PIngredient.cs" />
+    <Compile Include="Presentation\PInstruction.cs" />
+    <Compile Include="Presentation\PRating.cs" />
+    <Compile Include="Presentation\PUnit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

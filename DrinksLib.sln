@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinksLib", "DrinksLib0.00\DrinksLib.csproj", "{521409A8-EA8B-47BB-8576-0006E42335A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinksLibUnitTests", "DrinksUnitTests\DrinksLibUnitTests.csproj", "{061BE26E-C652-4DAE-9A78-FF03DE43863F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinksLibDebug", "DrinksDebugTests\DrinksLibDebug.csproj", "{275E4028-086B-4DD8-B7F8-167BC8B773DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{521409A8-EA8B-47BB-8576-0006E42335A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{521409A8-EA8B-47BB-8576-0006E42335A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{521409A8-EA8B-47BB-8576-0006E42335A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{521409A8-EA8B-47BB-8576-0006E42335A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{061BE26E-C652-4DAE-9A78-FF03DE43863F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{061BE26E-C652-4DAE-9A78-FF03DE43863F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{061BE26E-C652-4DAE-9A78-FF03DE43863F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{061BE26E-C652-4DAE-9A78-FF03DE43863F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{275E4028-086B-4DD8-B7F8-167BC8B773DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275E4028-086B-4DD8-B7F8-167BC8B773DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275E4028-086B-4DD8-B7F8-167BC8B773DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275E4028-086B-4DD8-B7F8-167BC8B773DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
